@@ -2,26 +2,22 @@ package com.minecraftuberverse.uberexemplar;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-public class UberExemplar {
-	
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "required-after:IGWMod@1.2.0-27")
+public class UberExemplar
+{
+	@Instance
+	public static UberExemplar instance;
+
+	@SidedProxy(clientSide = "com.minecraftuberverse.uberexemplar.ClientProxy", serverSide = "com.minecraftuberverse.uberexemplar.CommonProxy")
+	public static CommonProxy proxy;
+
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
-	{
-		
-	}
-	
 	public void init(FMLInitializationEvent event)
 	{
-		
-	}
-	
-	public void postInit(FMLPostInitializationEvent event)
-	{
-		
+		proxy.init();
 	}
 }
