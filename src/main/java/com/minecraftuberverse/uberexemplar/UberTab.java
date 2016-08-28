@@ -23,7 +23,7 @@ public class UberTab extends BaseWikiTab
 	public String getName()
 	{
 		// TODO Auto-generated method stub
-		return "key";
+		return "ue.tabname.ubertab";
 	}
 
 	@Override
