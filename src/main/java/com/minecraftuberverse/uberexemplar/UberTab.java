@@ -17,7 +17,6 @@ public class UberTab extends BaseTab
 	@Override
 	public ItemStack renderTabIcon(GuiWiki gui)
 	{
-		return null;// TODO replace with new ItemStack("insert item or block
-					// here");
+		return new ItemStack(ModAccessor.findItem("minecraft", "diamond_sword"));
 	}
 }
