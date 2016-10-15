@@ -10,7 +10,7 @@ public class UberTab extends BaseTab
 		super("ubertab");
 
 		// add stuff to page list
-		this.addSectionHeader("UAC0");
+		this.pageEntries.add("UAC0");
 		this.pageEntries.add("UAC1");
 	}
 
