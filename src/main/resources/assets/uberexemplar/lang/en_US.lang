@@ -1,7 +1,10 @@
 ue.tabname.ubertab=UberTab
 // to define a translation for a section header title, put a # before the title defined in code
-ue.entry.#UAC0=About UberARKCraft & Server
+ue.entry.#UAC0=UberARKCraft Guide
 
 // to define a translation for a page title, just use the title on it's own
+ue.entry.UAC0=UberARKCraft Server Info
 ue.entry.UAC1=Surviving the First Night
-ue.entry.UAC2=Getting Started
+ue.entry.UAC2-1=Getting Started Part 1
+ue.entry.UAC2-2=Getting Started Part 2
+ue.entry.UAC2-3=Getting Started Part 3
